@@ -1,0 +1,7 @@
+image: go1.4
+
+services:
+
+script:
+	- go get -t ./...
+	- go test 
