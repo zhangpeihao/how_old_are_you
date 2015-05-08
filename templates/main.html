@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+{{template "head"}}
+</head>
+<body class="hoay_main">
+<div class="container">
+<div class="row" style="padding-top:12px;">
+
+<div class="col-lg-offset-3 col-lg-6">
+<img id="thumbnail" src="static/img/samples/001.jpg" class="hoay_imgsize img-responsive center-block" onerror=" this.onerror = null;this.src = 'static/img/placeholder.png'; ">
+</div>
+
+<button class="btn btn-default center-block action" style="margin-top: 20px; background-color: rgb(174, 117, 11);border-radius:0" onclick=" document.getElementById('uploadBtn').click(); ">
+<span>
+<img src="static/img/upload.png" style="width: 25px; height: 25px">
+</span>
+上传你自己的照片试试看吧！
+</button>
+<input id="uploadBtn" type="file" accept="image/*" style="visibility: hidden; width: 0px; height: 0px">
+</div>
+</div>
+{{template "foot"}}
+</body>
+</html>

@@ -1,0 +1,7 @@
+.hoay_main {
+	background-color: rgb(248,152,33);
+}
+#thumbnail {
+	max-width: 640px;
+	max-height: 480px;
+}
