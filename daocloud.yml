@@ -1,7 +1,7 @@
 image: go1.4
 
-services: mysql
+services:
 
 script:
-	- go get -t ./...
-	- go test 
+    - go get -t ./...
+    - go test 
