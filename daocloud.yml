@@ -3,5 +3,7 @@ image: golang:1.4
 services:
 
 script:
+    - echo "GOPATH is $GOPATH"
     - export GOPATH=$PWD
+    - go get -t ./...
     - go test main_test.go
