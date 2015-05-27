@@ -4,5 +4,5 @@ services:
 
 script:
     - echo "GOPATH is $GOPATH"
-    - go get -t ./...
+    - go get ./...
     - go test main_test.go
