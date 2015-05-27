@@ -6,14 +6,20 @@
 </head>
 <body class="hoay_main">
 <div class="container">
-
 <div class="row" style="padding-top:12px;">
+
 <div class="col-lg-offset-3 col-lg-6">
-<img id="thumbnail" src="http://www.faceplusplus.com.cn/wp-content/themes/faceplusplus/assets/img/demo/16.jpg" class="hoay_imgsize img-responsive center-block" onerror=" this.onerror = null;this.src = 'static/img/placeholder.png'; ">
-</div>
+    <div id="img_div" style="position:relative; z-index:2;">
+        <div>
+            <img id="thumbnail" src="http://www.faceplusplus.com.cn/wp-content/themes/faceplusplus/assets/img/demo/16.jpg" class="hoay_imgsize img-responsive center-block" onerror=" this.onerror = null;this.src = 'static/img/placeholder.png'; ">
+        </div>
+        <!-- <div style="position:absolute; z-index:5; top: 50px; left: 158px; width: 106px; height: 106px; border:6px solid red;"></div>
+        <div style="position:absolute; z-index:5; top: -10px; left: 171px; width: 80px; height:60px; background:#f1d100;">
+            <p style="font-size:40px; text-align:center;">50</p>
+        </div> -->
+    </div>
 </div>
 
-<div class="row" style="padding-top:12px;">
 <button class="btn btn-default center-block action" style="margin-top: 20px; background-color: rgb(174, 117, 11);border-radius:0" onclick=" document.getElementById('uploadBtn').click(); ">
 <span>
 <img src="static/img/upload.png" style="width: 25px; height: 25px">
@@ -22,7 +28,6 @@
 </button>
 <input id="uploadBtn" type="file" accept="image/*" style="visibility: hidden; width: 0px; height: 0px">
 </div>
-
 </div>
 {{template "foot"}}
 </body>
