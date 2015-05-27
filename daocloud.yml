@@ -4,5 +4,4 @@ services:
 
 script:
     - export GOPATH=$PWD
-    - go get -t ./...
-    - go test 
+    - go test main_test.go
