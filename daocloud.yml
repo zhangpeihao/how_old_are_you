@@ -3,5 +3,6 @@ image: golang:1.4
 services:
 
 script:
+	- export GOPATH=$PWD
     - go get -t ./...
     - go test 
