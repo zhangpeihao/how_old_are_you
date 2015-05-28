@@ -4,7 +4,7 @@ services:
 
 script:
     - echo "GOPATH is $GOPATH"
-	- mkdir -p $GOPATH/src/github.com/zhangpeihao
+    - mkdir -p $GOPATH/src/github.com/zhangpeihao
     - ln -s . $GOPATH/src/github.com/zhangpeihao/how_old_are_you
     - cd $GOPATH/src/github.com/zhangpeihao/how_old_are_you
     - go get -t ./...
